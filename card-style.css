@@ -90,8 +90,8 @@
 /* Hide Pomelo's default label text and keep only our ::after text */
 .list .expiration-date .label,
 .list .security-code .label {
-  font-size: 0 !important;
-  line-height: 0 !important;
+  color: transparent !important;
+  position: relative;
 }
 
 .list .expiration-date .label::after,
@@ -102,6 +102,9 @@
   line-height: 18px !important;
   color: black !important;
   display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .wrapper {
