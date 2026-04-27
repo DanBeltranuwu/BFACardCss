@@ -1,83 +1,92 @@
- * {
-     font-family: 'Mulish', sans-serif;
- }
+* {
+  font-family: "Mulish", sans-serif;
+}
 
 .list .pan .copy-icon,
 .card .pan .copy-icon {
-    display: none !important;
+  display: none !important;
 }
 
- .list {
-     padding: 16px 24px 0px 16px;
-     flex-wrap: wrap;
-     display: flex;
-     flex-direction: row;
-     width: 95%;
-     box-shadow: none;
-     height: fit-content;
- }
+.list {
+  padding: 16px 24px 0px 16px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  box-shadow: none;
+  height: fit-content;
+}
 
- .list>* {
-     margin: 0 0 16px 0 !important;
-     padding: 0 !important;
-     box-sizing: border-box;
- }
+.list > * {
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
 
+.label {
+  margin-top: 0px !important;
+  color: white !important;
+  font-weight: 300;
+  font-size: 16px;
+}
 
+.name {
+  width: 100%;
+  order: 1;
+}
 
- .label {
-     margin-top: 0px !important;
-     color: white !important;
-     font-weight: 300;
-     font-size: 16px;
- }
-
- .name {
-     width: 100%;
-     order: 1;
- }
+.list .name {
+  text-transform: capitalize;
+}
 
 .list .name .label,
 .list .pan .label {
-    display: none !important;
- }
+  display: none !important;
+}
 
- .pan {
-     order: 2;
-     width: 100%;
- }
+.pan {
+  order: 2;
+  width: 100%;
+}
 
- .expiration-date {
-     order: 3;
-     width: 50%;
- }
+.expiration-date {
+  order: 3;
+  width: 50%;
+}
 
- .security-code {
-     order: 4;
-     width: 50%;
- }
+.security-code {
+  order: 4;
+  width: 50%;
+}
 
- .expiration-date,
- .name,
- .pan,
- .security-code {
-     color: black !important;
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 13px !important;
-    line-height: 18px !important;
+.expiration-date .label::after {
+  content: "Válida hasta";
+}
 
- }
+.security-code .label::after {
+  content: "CVV";
+}
+
+.expiration-date,
+.name,
+.pan,
+.security-code {
+  color: black !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+}
 
 .list .expiration-date .label,
 .list .security-code .label {
-    color: black !important;
-    font-family: 'Roboto', sans-serif !important;
-    font-weight: 400 !important;
-    font-size: 13px !important;
-    line-height: 18px !important;
+  color: black !important;
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
 }
 
- .wrapper {
-     display: flex;
- }
+.wrapper {
+  display: flex;
+}
