@@ -87,6 +87,23 @@
   line-height: 18px !important;
 }
 
+/* Hide Pomelo's default label text and keep only our ::after text */
+.list .expiration-date .label,
+.list .security-code .label {
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+.list .expiration-date .label::after,
+.list .security-code .label::after {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+  color: black !important;
+  display: inline-block;
+}
+
 .wrapper {
   display: flex;
 }
